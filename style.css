@@ -47,12 +47,9 @@ body {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-div.blue {
-  background-color: deepskyblue;
-}
-
-div.blue:hover {
-  background-color: cornflowerblue;
+div.invisible, div.invisible:hover {
+  background-color: white;
+  border: none;
 }
 
 div.green {
@@ -63,10 +60,14 @@ div.green:hover {
   background-color: lightgreen;
 }
 
+div.blue {
+  background-color: deepskyblue;
+}
+
+div.blue:hover {
+  background-color: cornflowerblue;
+}
+
 /* Sometimes display: none would be appropriate here. However, because we want the dots
  * to stay in position and take up space, we turn off colour and border instead
  */
-div.invisible, div.invisible:hover {
-  background-color: white;
-  border: none;
-}
